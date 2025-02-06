@@ -1,0 +1,42 @@
+.header {
+  padding-top: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about_company {
+  display: flex;
+  align-items: center;
+}
+
+.logo__block {
+  position: relative;
+}
+
+.logo__letter {
+  position: absolute;
+  top: 12%;
+  right: 30%;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+}
+
+.company_name {
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #233348;
+}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__item {
+  font-weight: 400;
+  font-size: 18px;
+  color: #1f1534;
+}
