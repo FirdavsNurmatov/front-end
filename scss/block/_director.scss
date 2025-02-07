@@ -1,0 +1,86 @@
+.director {
+  padding: 140px;
+  background-color: #004047;
+}
+
+.director__block {
+  background-color: transparent;
+}
+
+.director__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+  margin: 140px 0 64px 0;
+  background-color: transparent;
+}
+
+.director__block_panel {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto;
+  row-gap: 48px;
+  column-gap: 30px;
+  background-color: transparent;
+}
+
+.director__list {
+  width: 350px;
+  background-color: transparent;
+}
+
+.director__profile {
+  text-align: center;
+  padding: 32px 24px 56px;
+  margin-bottom: 28px;
+  background-color: #012f34;
+  position: relative;
+}
+
+.director__profile_img {
+  width: 96px;
+  height: 96px;
+  background-color: transparent;
+}
+
+.director__name {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: #79c8c7;
+  background-color: transparent;
+}
+
+.director__role {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 167%;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+}
+
+.director__btn_block {
+  width: 56px;
+  height: 56px;
+  background-color: #f67e7e;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  right: 42%;
+  bottom: -28px;
+}
+
+.director__btn {
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  font-weight: 500;
+  color: #012f34;
+}
