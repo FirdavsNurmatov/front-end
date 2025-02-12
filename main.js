@@ -85,6 +85,22 @@ const getSingleData = async (id) => {
   }
 };
 
+const updateData = async (id, updatedData) => {
+  try {
+    const res = await fetch(`http://localhost:3600/todos/${id}`, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "PUT",
+      body: JSON.stringify({ title: updatedData }),
+    });
+
+    return res;
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
 const deleteData = async (id) => {
   try {
     const res = await fetch(`http://localhost:3600/todos/${id}`, {
@@ -112,7 +128,6 @@ form.addEventListener("submit", async (e) => {
       body: JSON.stringify({ title: input.value }),
     });
     input.value = "";
-    const result = await res.json();
     getData();
   } catch (error) {
     console.log("addeventlistener form");
@@ -132,7 +147,6 @@ box.addEventListener("click", async (e) => {
     }
   } else if (e.target.className === "delete__btn") {
     const data = await getSingleData(e.target.id);
-    console.log(e.target.id);
     if (data) {
       const oldData = getLocalData("users") || [];
 
@@ -140,6 +154,24 @@ box.addEventListener("click", async (e) => {
       setData("users", [...newData]);
 
       await deleteData();
+      getData();
+    }
+  } else if (e.target.className === "edit__btn") {
+    const data = await getSingleData(e.target.id);
+    if (data) {
+      const oldData = await getLocalData(e.target.id);
+
+      const newTitle = prompt("New title:");
+      const res = await updateData(e.target.id, newTitle);
+
+      const updatedData = oldData.map((item) => {
+        if (item.id == e.target.id) {
+          item.title = newTitle;
+        }
+      });
+      setData("users", [...updatedData]);
+
+      getData();
     }
   }
 });
