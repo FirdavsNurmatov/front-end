@@ -22,4 +22,12 @@ a {
 
 button {
   cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  color: #fcf6f5;
+  background-color: #f3603c;
+  border: none;
+  border-radius: 22px;
+  outline: none;
+  padding: 12px 32px;
 }

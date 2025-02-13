@@ -2,6 +2,7 @@ import React from "react";
 import heroImg from "./assets/hero.svg";
 import "./App.css";
 import { Header } from "./components/headers/header";
+import { Service } from "./components/service/service";
 // import { useState } from "react";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <section className="hero">
         <div className="container">
           <div className="hero__block">
-            <div>
+            <div className="hero__info">
               <h2 className="hero__title">
                 Bring everyone together to build better products.
               </h2>
@@ -27,8 +28,17 @@ function App() {
               </p>
               <button className="hero__btn">Get started</button>
             </div>
-            <img src={heroImg} alt="image" />
+            <img src={heroImg} alt="image" className="hero__img" />
           </div>
+        </div>
+      </section>
+      <section className="service">
+        <div className="container">
+          <Service
+            number={"01"}
+            title={`Track company-wide progress`}
+            text={`See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.`}
+          />
         </div>
       </section>
     </>
