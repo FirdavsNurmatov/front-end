@@ -1,0 +1,28 @@
+.header__block {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 32px;
+}
+
+.nav__item {
+  font-weight: 500;
+  font-size: 13px;
+  color: #242d52;
+}
+
+.header__btn {
+  font-weight: 700;
+  font-size: 13px;
+  color: #fcf6f5;
+  background-color: #f3603c;
+  border: none;
+  border-radius: 22px;
+  outline: none;
+  padding: 12px 32px;
+}
