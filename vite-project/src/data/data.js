@@ -18,4 +18,49 @@ export const newProducts = [
     img: product3,
     title: "Product 3",
   },
+  {
+    id: 1,
+    img: product1,
+    title: "Product 1",
+  },
+  {
+    id: 2,
+    img: product2,
+    title: "Product 2",
+  },
+  {
+    id: 3,
+    img: product3,
+    title: "Product 3",
+  },
+  {
+    id: 1,
+    img: product1,
+    title: "Product 1",
+  },
+  {
+    id: 2,
+    img: product2,
+    title: "Product 2",
+  },
+  {
+    id: 3,
+    img: product3,
+    title: "Product 3",
+  },
+  {
+    id: 1,
+    img: product1,
+    title: "Product 1",
+  },
+  {
+    id: 2,
+    img: product2,
+    title: "Product 2",
+  },
+  {
+    id: 3,
+    img: product3,
+    title: "Product 3",
+  },
 ];
