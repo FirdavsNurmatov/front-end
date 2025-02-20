@@ -10,15 +10,27 @@ function App() {
     e.preventDefault();
     if (input) {
       setInput("");
-      request.post("/todos", { title: input }).then((res) => {});
+      console.log(input);
+
+      request.post("/todos", { id: Date.now(), title: input }).then((res) => {
+        console.log(res);
+      });
+
+      request.get("/todos").then((res) => {
+        setUsers(res.data);
+        console.log(res.data);
+      });
     }
   };
 
-  React.useEffect(() => {});
+  React.useEffect(() => {
+    addUser;
+  }, []);
 
   React.useEffect(() => {
     request.get("/todos").then((res) => {
       setUsers(res.data);
+      console.log(res.data);
     });
   }, []);
 
