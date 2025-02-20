@@ -10,15 +10,11 @@ function App() {
     e.preventDefault();
     if (input) {
       setInput("");
-      console.log(input);
 
-      request.post("/todos", { id: Date.now(), title: input }).then((res) => {
-        console.log(res);
-      });
+      request.post("/todos", { id: Date.now(), title: input });
 
       request.get("/todos").then((res) => {
         setUsers(res.data);
-        console.log(res.data);
       });
     }
   };
@@ -30,7 +26,6 @@ function App() {
   React.useEffect(() => {
     request.get("/todos").then((res) => {
       setUsers(res.data);
-      console.log(res.data);
     });
   }, []);
 
