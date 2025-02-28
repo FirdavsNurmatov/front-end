@@ -5,6 +5,7 @@ import zaraIcon from "../assets/svg/brands/zara.svg";
 import gucciIcon from "../assets/svg/brands/gucci.svg";
 import pradaIcon from "../assets/svg/brands/prada.svg";
 import calvinKleinIcon from "../assets/svg/brands/calvin-klein.svg";
+import productImg from "../assets/svg/products/product.svg";
 
 const icons = [vercaceIcon, zaraIcon, gucciIcon, pradaIcon, calvinKleinIcon];
 
@@ -58,6 +59,72 @@ export const Home = () => {
           {icons.map((item) => (
             <img src={item} alt="img" />
           ))}
+        </div>
+      </section>
+      <section className="products pt-[72px] pb-[80px]">
+        <div className="container">
+          <div>
+            <h2 className="font-bold text-[48px]  text-center text-[#000]">
+              NEW ARRIVALS
+            </h2>
+            <div className="pt-[55px] pb-[64px] text-center">
+              <div className="flex mb-[36px] gap-[20px] text-start">
+                <div>
+                  <img src={productImg} alt="img" />
+                  <p className="pt-[16px]">T-SHIRT WITH TAPE DETAILS</p>
+                </div>
+                <div>
+                  <img src={productImg} alt="img" />
+                  <p className="pt-[16px]">T-SHIRT WITH TAPE DETAILS</p>
+                </div>
+                <div>
+                  <img src={productImg} alt="img" />
+                  <p className="pt-[16px]">T-SHIRT WITH TAPE DETAILS</p>
+                </div>
+                <div>
+                  <img src={productImg} alt="img" />
+                  <p className="pt-[16px]">T-SHIRT WITH TAPE DETAILS</p>
+                </div>
+              </div>
+              <Button
+                className={
+                  "border cursor-pointer rounded-[62px] py-[16px] px-[54px] w-[218px]"
+                }
+                text={"View All"}
+              />
+            </div>
+          </div>
+          <div>
+            <h2 className="font-bold text-[48px]  text-center text-[#000]">
+              TOP SELLING
+            </h2>
+          </div>
+          <div className="pt-[55px] pb-[64px] text-center">
+            <div className="flex mb-[36px] gap-[20px] text-start">
+              <div>
+                <img src={productImg} alt="img" />
+                <p className="pt-[16px]">T-SHIRT WITH TAPE DETAILS</p>
+              </div>
+              <div>
+                <img src={productImg} alt="img" />
+                <p className="pt-[16px]">T-SHIRT WITH TAPE DETAILS</p>
+              </div>
+              <div>
+                <img src={productImg} alt="img" />
+                <p className="pt-[16px]">T-SHIRT WITH TAPE DETAILS</p>
+              </div>
+              <div>
+                <img src={productImg} alt="img" />
+                <p className="pt-[16px]">T-SHIRT WITH TAPE DETAILS</p>
+              </div>
+            </div>
+            <Button
+              className={
+                "border cursor-pointer rounded-[62px] py-[16px] px-[54px] w-[218px]"
+              }
+              text={"View All"}
+            />
+          </div>
         </div>
       </section>
     </>
