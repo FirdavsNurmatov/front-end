@@ -7,7 +7,13 @@ import pradaIcon from "../assets/svg/brands/prada.svg";
 import calvinKleinIcon from "../assets/svg/brands/calvin-klein.svg";
 import productImg from "../assets/svg/products/product.svg";
 
-const icons = [vercaceIcon, zaraIcon, gucciIcon, pradaIcon, calvinKleinIcon];
+const icons = [
+  { id: 1, product: vercaceIcon },
+  { id: 2, product: zaraIcon },
+  { id: 3, product: gucciIcon },
+  { id: 4, product: pradaIcon },
+  { id: 5, product: calvinKleinIcon },
+];
 
 export const Home = () => {
   return (
@@ -24,7 +30,7 @@ export const Home = () => {
               of style.
             </p>
             <Button
-              link={"/product"}
+              link={"/products"}
               className={
                 " rounded-[62px] py-[16px] px-[54px] text-[#fff] bg-[#000] w-[210px] cursor-pointer"
               }
@@ -57,7 +63,7 @@ export const Home = () => {
       <section className="brands bg-black">
         <div className="container flex gap-[106px] py-[45px]">
           {icons.map((item) => (
-            <img src={item} alt="img" />
+            <img key={item.id} src={item.product} alt="img" />
           ))}
         </div>
       </section>
@@ -91,6 +97,7 @@ export const Home = () => {
                   "border cursor-pointer rounded-[62px] py-[16px] px-[54px] w-[218px]"
                 }
                 text={"View All"}
+                link={"/products"}
               />
             </div>
           </div>

@@ -4,6 +4,7 @@ import logo from "../assets/svg/header/logo.svg";
 import shopIcon from "../assets/svg/header/shop-icon.svg";
 import profileIcon from "../assets/svg/header/profile-icon.svg";
 import searchIcon from "../assets/svg/header/search-icon.svg";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const {
@@ -17,6 +18,8 @@ export const Header = () => {
     console.log(data);
   };
 
+  const navigate = useNavigate();
+
   return (
     <>
       <div className=" bg-black flex justify-center py-[10px]">
@@ -26,7 +29,12 @@ export const Header = () => {
         </p>
       </div>
       <div className="container flex items-center gap-10 py-6">
-        <img src={logo} alt="logo" />
+        <img
+          src={logo}
+          alt="logo"
+          onClick={() => navigate("/")}
+          className=" cursor-pointer"
+        />
         <ul className="flex gap-6">
           <li>
             <select name="shop" className="cursor-pointer">
