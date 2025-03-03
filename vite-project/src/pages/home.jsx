@@ -130,6 +130,7 @@ export const Home = () => {
                 "border cursor-pointer rounded-[62px] py-[16px] px-[54px] w-[218px]"
               }
               text={"View All"}
+              link={"/products"}
             />
           </div>
         </div>
