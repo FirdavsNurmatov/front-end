@@ -24,7 +24,7 @@ export const Products = () => {
                   One Life Graphic T-shirt
                 </h2>
                 <p className="font-bold text-[32px] text-[#000]">
-                  $260{" "}
+                  $260
                   <span className=" line-through text-[rgba(0,0,0,0.3)]">
                     $300
                   </span>

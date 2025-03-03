@@ -1,15 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Button = ({ link, className, text, ...props }) => {
+  const navigate = useNavigate();
+
   return (
-    <button
-      onClick={() => {
-        <Link to={link} />;
-      }}
-      className={className}
-      {...props}
-    >
+    <button onClick={() => navigate(link)} className={className} {...props}>
       {text}
     </button>
   );
