@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button {
+  cursor: pointer;
+}
