@@ -1,21 +1,44 @@
-.container {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 button {
   cursor: pointer;
 }
 
+.form__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  height: 100vh;
+  align-items: center;
+}
+
+.form__block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 15%;
+}
+
 .sign_in__title {
   font-weight: 700;
   font-size: 24px;
   color: #000;
+  margin-bottom: 12px;
 }
 
 .sing_in__des {
