@@ -55,7 +55,7 @@ export const Header = () => {
             type="text"
             placeholder="Search for products..."
             {...register("searchProduct")}
-            className="bg-[#f0f0f0] py-3 pl-13.5 w-[100%] rounded-[62px]"
+            className="bg-[#f0f0f0] py-3 pl-13.5 pr-2.5 w-[100%] rounded-[62px]"
           />
         </form>
         <div className="flex gap-3.5">
