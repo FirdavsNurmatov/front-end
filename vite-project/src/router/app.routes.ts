@@ -1,3 +1,3 @@
 import { Home } from "../pages/app/home";
 
-export const appRoutes = [{ comp: Home, path: undefined }, {}];
+export const appRoutes = [{ comp: Home, path: undefined }];
