@@ -3,8 +3,28 @@
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
   cursor: pointer;
+}
+
+.sign_in__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+.sing_in__des {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sign_in__text_block {
+  width: 313px;
 }
