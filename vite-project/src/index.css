@@ -11,4 +11,10 @@
 
 button {
   cursor: pointer;
+  outline: none;
+}
+
+@theme {
+  --font-family: "Satoshi", "sans-serif";
+  --second-family: "Integral CF", "sans-serif";
 }

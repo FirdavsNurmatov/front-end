@@ -101,12 +101,13 @@ export const Home = () => {
               />
             </div>
           </div>
+          <hr className="text-[rgba(0,0,0,0.1)]" />
           <div>
-            <h2 className="font-bold text-[48px]  text-center text-[#000]">
+            <h2 className="font-bold text-[48px] pt-[64px] text-center text-[#000]">
               TOP SELLING
             </h2>
           </div>
-          <div className="pt-[55px] pb-[64px] text-center">
+          <div className="pt-[55px] text-center">
             <div className="flex mb-[36px] gap-[20px] text-start">
               <div>
                 <img src={productImg} alt="img" />
