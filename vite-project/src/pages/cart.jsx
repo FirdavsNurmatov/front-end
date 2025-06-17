@@ -1,4 +1,3 @@
-import React from "react";
 import { CartComp } from "../components/cart-comp";
 import { Button } from "../components/button";
 

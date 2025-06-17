@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import product from "../assets/svg/cart/product.svg";
 import deleteIcon from "../assets/svg/cart/delete-icon.svg";
 
