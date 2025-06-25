@@ -24,10 +24,10 @@ const icons = [
 export const Home = () => {
   return (
     <>
-      <section className="hero  bg-[#F2F0F1] ">
-        <div className="container bg-[url('src/assets/png/home/models.png')] bg-cover bg-center">
-          <div className="w-[577px] pt-[103px] pb-[116px] flex flex-col gap-8">
-            <h1 className="font-bold text-[64px] leading-[100%] text-[#000]">
+      <section className="hero bg-[#F2F0F1] ">
+        <div className="container lg:bg-[url('src/assets/png/home/models.png')] lg:bg-cover lg:bg-center">
+          <div className="max-w-[577px] pt-[40px] lg:pt-[103px] pb-[116px] flex flex-col lg:gap-8 gap-5">
+            <h1 className="font-bold text-[36px] lg:text-[64px] leading-[94%] lg:leading-[100%]">
               FIND CLOTHES THAT MATCHES YOUR STYLE
             </h1>
             <p className="font-normal text-[16px] leading-[137%] text-[rgba(0,0,0,0.6)]">
@@ -38,26 +38,32 @@ export const Home = () => {
             <Button
               link={"/products"}
               className={
-                " rounded-[62px] py-[16px] px-[54px] text-[#fff] bg-[#000] w-[210px] cursor-pointer"
+                "rounded-[62px] py-[16px] px-[54px] text-[#fff] bg-[#000] grow lg:w-[210px] cursor-pointer"
               }
               text={"Shop Now"}
             />
-            <div className="w-[596px] flex">
-              <div className="pr-[32px] border-r-1 border-[rgba(0,0,0,0.1)]">
-                <h4 className="font-bold text-[40px] text-[#000]">200+</h4>
-                <p className="font-normal text-[16px] leading-[137%] text-[rgba(0,0,0,0.6)]">
+            <div className="max-w-[596px] flex lg:flex-nowrap flex-wrap lg:gap-0 gap-8">
+              <div className="lg:pr-[32px] lg:border-r-1 border-[rgba(0,0,0,0.1)]">
+                <h4 className="font-family font-bold text-[24px] lg:text-[40px] text-[#000]">
+                  200+
+                </h4>
+                <p className="font-family font-normal text-[12px] lg:text-[16px] leading-[183%] lg:leading-[137%] text-[rgba(0,0,0,0.6)]">
                   Internationl Brands
                 </p>
               </div>
-              <div className="px-[32px] border-r-1 border-[rgba(0,0,0,0.1)]">
-                <h4 className="font-bold text-[40px] text-[#000]">2,000+</h4>
-                <p className="font-normal text-[16px] leading-[137%] text-[rgba(0,0,0,0.6)]">
+              <div className="lg:px-[32px] lg:border-r-1 border-[rgba(0,0,0,0.1)]">
+                <h4 className="font-family font-bold text-[24px] lg:text-[40px] text-[#000]">
+                  2,000+
+                </h4>
+                <p className="font-family font-normal text-[12px] lg:text-[16px] leading-[183%] lg:leading-[137%] text-[rgba(0,0,0,0.6)]">
                   High-Quality Products
                 </p>
               </div>
-              <div className="pl-[32px]">
-                <h4 className="font-bold text-[40px] text-[#000]">30,000+</h4>
-                <p className="font-normal text-[16px] leading-[137%] text-[rgba(0,0,0,0.6)]">
+              <div className="lg:pl-[32px]">
+                <h4 className="font-family font-bold text-[24px] lg:text-[40px] text-[#000]">
+                  30,000+
+                </h4>
+                <p className="font-family font-normal text-[12px] lg:text-[16px] leading-[183%] lg:leading-[137%] text-[rgba(0,0,0,0.6)]">
                   Happy Customers
                 </p>
               </div>
@@ -231,21 +237,21 @@ export const Home = () => {
           <h2 className="font-bold text-[48px] text-center">
             BROWSE BY DRESS STYLE
           </h2>
-          <div className="pt-[64px] px-[64px] flex flex-col gap-[20px]">
-            <div className="flex gap-[20px]">
+          <div className="pt-[28px] lg:pt-[64px] lg:px-[64px] flex flex-col gap-[20px]">
+            <div className="lg:flex gap-[20px]">
               <a href="">
-                <img src={casual} alt="casual" />
+                <img className="w-[310px] h-[190px] lg:w-auto lg:h-auto" src={casual} alt="casual" />
               </a>
               <a href="">
-                <img src={formal} alt="formal" />
+                <img className="w-[310px] h-[190px] lg:w-auto lg:h-auto" src={formal} alt="formal" />
               </a>
             </div>
-            <div className="flex gap-[20px]">
+            <div className="lg:flex gap-[20px]">
               <a href="">
-                <img src={party} alt="party" />
+                <img className="w-[310px] h-[190px] lg:w-auto lg:h-auto" src={party} alt="party" />
               </a>
               <a href="">
-                <img src={gym} alt="gym" />
+                <img className="w-[310px] h-[190px] lg:w-auto lg:h-auto" src={gym} alt="gym" />
               </a>
             </div>
           </div>
